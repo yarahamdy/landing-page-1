@@ -1,49 +1,67 @@
 html, body {
-    margin: 0;
-    background: #30363D;
+    background: #3C444C;
     font-family: Montserrat;
+    margin: 0;
 }
-button{
+
+button {
     border: 0;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
+a, a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
 }
-.headerContainer {
+
+.fluid-page {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.section {
     display: flex;
+    width: 100%;
+}
+
+.headerContainer {
     justify-content: space-between;
     align-content: center;
     background: #3C444C;
-    width: 100%;
     height: 80px;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
 }
 
 .items {
     width: 55%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 
 }
-.register{
+
+.register {
     border: 0;
 }
 
 
 .auth {
-    width:21%;
+    width: 21%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
+
 .logo {
-    margin-left: 120px;
+    margin-left: 16px;
 }
 
 .item {
@@ -72,9 +90,7 @@ button{
 }
 
 .sub {
-    display: flex;
-    width: 100%;
-    height: 500px;
+    align-items: flex-end;
     background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%), #3C444C;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
     flex-direction: column;
@@ -83,8 +99,21 @@ button{
 
 .sub-content {
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 100%;
+}
+
+.header {
+    width: 30%;
+    margin: 16px 16px 76px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-header-image {
+    width: 50%;
+    background: url('Group 29@2x.svg') no-repeat center;
+    background-size: 571px 636px;
 }
 
 .sub-mask {
@@ -150,24 +179,6 @@ h1 {
 
 }
 
-.phone {
-    width: 636px;
-    height: 658px;
-    background: url(Group 29@2x2.png);
-    z-index: 0;
-
-
-}
-
-.header {
-    width: 400px;
-    height: 282px;
-    margin: 60px 50px 35px 120px;
-
-
-    display: flex;
-    flex-direction: column;
-}
 
 .buttons {
     display: flex;
@@ -177,10 +188,7 @@ h1 {
 }
 
 .fullcontent {
-    display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    height: 534px;
     background: #3C444C;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
 
@@ -189,8 +197,8 @@ h1 {
 .full {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
-    margin-top: 40px;
+    margin-left: 16px;
+    margin-top: 16px;
 
 }
 
@@ -216,8 +224,7 @@ h1 {
 }
 
 .readmore {
-    width: 190px;
-    height: 40px;
+    padding: 16px;
     background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
     border-radius: 20px;
     margin-top: 20px;
@@ -231,7 +238,7 @@ h1 {
 .image {
     width: 446px;
     height: 462px;
-    background: url(Group 29@2x2.png);
+    background: url('Group 29@2x2.png');
     margin-right: 119px;
     margin-top: 36px;
 
@@ -239,11 +246,8 @@ h1 {
 }
 
 .content2 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 454px;
     background: #3C444C;
     margin-top: 60px;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
@@ -282,20 +286,15 @@ h1 {
 .content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly
-;
+    justify-content: space-evenly;
     align-items: center;
 
 }
 
 .lastContainer {
-    display: flex;
     flex-direction: column;
     align-items: normal;
-    justify-content:center;
-
-    width: 100%;
-    height: 591px;
+    justify-content: center;
     background: #3C444C;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
 
@@ -336,8 +335,8 @@ h2 {
 .cont {
     display: flex;
     align-items: center;
-    justify-content:space-evenly
-;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
 }
 
@@ -346,29 +345,34 @@ h2 {
     flex-direction: column;
 }
 
-
-.sub-header-image {
-    width: 100%;
-    background: url('Group 29@2x.svg') no-repeat center;
-    background-size: 658px 636px;
-}
-.footer{
-    display: flex;
-    justify-content:space-evenly;
+.footer {
     align-items: center;
-    width: 100%;
-    height: 311px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background: #3C444C;
-
 }
-.footerp{
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerp {
     font-family: Montserrat;
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
 }
-.title{
+
+.title {
     font-family: Montserrat;
     font-weight: bold;
     font-size: 10px;
@@ -380,10 +384,9 @@ h2 {
     margin-left: 10px;
 
 
-
-
 }
-.footer-item{
+
+.footer-item {
     font-family: Montserrat;
     font-size: 14px;
     line-height: 22px;
@@ -392,20 +395,17 @@ h2 {
     margin: 10px;
 
 }
-.sub-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.end{
+
+
+.end {
     width: 100%;
     height: 80px;
     background: #3C444C;
     opacity: 0.5;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-around;
-    align-items:center ;
+    justify-content: space-between;
+    align-items: center;
     font-family: Montserrat;
     font-size: 14px;
     line-height: 22px;
@@ -413,19 +413,51 @@ h2 {
 
 
 }
-.sub-end{
-    width: 20%;
+
+.sub-end {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    white-space: nowrap;
 }
-.separator{
+
+.sub-end a {
+    padding: 8px;
+}
+
+.separator {
     width: 100%;
     height: 60px;
     color: #F27A54;
 }
-.footer-icons{
+
+.footer-icons {
     margin-right: 10px;
 }
-.footer-logo{
+
+.footer-logo {
     margin-right: 80px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    .sub-header-image {
+        display: none;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .sub-content .header {
+        width: 100%;
+    }
+
+    .sub-content .header h1 {
+        /*font-size: 1rem;*/
+    }
 }
